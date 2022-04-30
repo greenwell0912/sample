@@ -7,3 +7,9 @@ add_executable(speed_measurement main.c)
 # gcc -Wall オプションを指定する
 set(CMAKE_C_FLAGS "-Wall -O3")
 #set(CMAKE_C_FLAGS "-Wall")
+
+enable_testing()
+add_test(
+    NAME speed-measurement
+    COMMAND $<TARGET_FILE:speed_measurement>
+)
