@@ -15,7 +15,7 @@ int main() {
 
     // measurement task
     printf("uint %u\n",  UINT_MAX);
-    for(unsigned int i=0; i<1000000;) {
+    for(unsigned int i=0; i<1000;) {
     //for(unsigned int i=0; i<=4000000000;) {
         printf("num %u\n",  i);
         i++;
